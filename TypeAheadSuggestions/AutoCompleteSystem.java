@@ -1,4 +1,4 @@
-package StackAndQueue;
+package SystemDesign;
 
 import java.util.*;
 
@@ -58,33 +58,5 @@ class AutocompleteSystem {
             }
         }
         return res;
-    }
-
-
-    /*------------------Driver Code ------------*/
-    public static void main(String[] args) {
-        //The system have already tracked down the following sentences and their corresponding times
-        String[] sentences = {"i love you", "island","ironman", "i love India"};
-        int[] times = {5,3,2,2};
-        AutocompleteSystem obj = new AutocompleteSystem(sentences, times);
-        //Operation: input('i')
-        //Output: ["i love you", "island","i love India"]
-        List<String> list1 = obj.input('i');
-        System.out.println(list1);
-
-        //Operation: input(' ')
-        //Output: ["i love you","i love India"]
-        List<String> list2 = obj.input(' ');
-        System.out.println(list2);
-
-        //Operation: input('a')
-        //Output: []
-        List<String> list3 = obj.input('a');
-        System.out.println(list3);
-
-        //Operation: input('#')
-        //Output: []
-        List<String> list4 = obj.input('#');
-        System.out.println(list4);
     }
 }
